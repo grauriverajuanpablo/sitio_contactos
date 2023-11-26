@@ -1,0 +1,274 @@
+css    *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background: linear-gradient(#e1d9cf 0%, #ddd9d4 130px,#d6d1cc 130px);
+    
+}
+.container {
+    position: relative;
+    width: 2396px;
+    max-width: 100%;
+    height: calc(200vh - 0px);
+    background: #f6f2f2;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.092),0 2px 5px 0 rgba(0, 0, 0, 0.092);
+    display: flex;
+    flex-direction: row
+}
+.container .leftside {
+    flex-direction: row
+    position: relative;
+    flex: 30%;
+    background: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.301);
+}
+.container .rightside {
+    position:relative;
+    flex: 100%;
+    background:rgb(231, 221, 221);
+
+}
+.container .rightside::before {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.09;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #eceaf0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:3 15px;
+    
+}
+.header .usuario{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+}
+.header.usuario h4 {
+font-size: 0.5em;
+font-weight: 0.6;
+color: #693eaf;
+}
+.estado{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+.estado p {
+    color: #cb1313;
+    display: -webkit-flex;
+    -webkit-line-clamp: 1;
+    font-size: 0.8em;
+    -webkit-box-orient:horizontal;
+    overflow: hidden;
+    text-overflow:initial;
+}
+.imguser{
+    
+    position:sticky;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 80%;
+    cursor:auto;
+   
+
+}
+.cover {
+    position: relative;
+    top: 0;
+   
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+.nav_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav_icons li{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    color: #431f07;
+    font-size: 1.5em;
+    margin-left: 22px;
+    
+}
+
+.busqueda 
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #482b0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+.boton{
+    position: relative;
+    width: 60%;
+    height: 30px;
+    background: #a77541;
+    cursor: pointer;
+    border-radius: 15px;
+    border: solid 2px #431f07;
+}
+
+
+.dir{
+    position: relative;
+    height: calc(100% - 110px); /*  restarle el alto de header y busqueda */
+    overflow-y: auto;
+    justify-content: space-around;
+    
+
+    
+}
+.dir .bloque{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+    cursor: pointer;
+}
+.dir .bloque .contactoimg{
+    position: relative;
+    min-width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 5%;
+    margin-right: 10px;
+}
+.dir .bloque .notas {
+    position: relative;
+    width: 100%;
+}
+.dir .bloque .notas .nombre {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+.dir .bloque .notas .nombre h4 {
+font-size: 1.1em;
+font-weight: 600;
+color: #111;
+
+}
+.mensaje {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.mensaje p {
+    color: #aaa;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.inicio {
+    position: relative;
+    display: flex;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+height: 100vh;
+}
+
+
+.inicio .bloque2{
+
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+
+}
+.caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #512c05;
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    border: solid 2px #a77541;
+
+}
+.inicio .bloque2 .logo{
+    
+    position: relative;
+    min-width: 200px;
+    height: 200px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 1));
+    
+}
+.texto{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.texto .titulo{
+
+    display: flex;
+    justify-content: center;
+    
+}
+.texto .titulo h2{
+    font-size: 2em;
+    font-weight: 900;
+    color: #111;  
+}
+.parrafo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.parrafo p {
+    color: #000000;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.9em;
+
+}
